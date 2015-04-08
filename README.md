@@ -1,2 +1,3 @@
-# microblog
-The Flask Mega Tutorial
+# The Flask Mega Tutorial
+
+By @miguelgrinberg
