@@ -26,9 +26,9 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         flash('Login requested for OpenID="%s", remember_me=%s' %
-              (form.openid.data, str(form.remember_me.data)))
+              (form.openid.data, str(form.remember_me.data)), 'success')
         return redirect('/index')
     return render_template('login.html',
-                           title='Sign In',
+                           title='Log In',
                            form=form,
                            providers=app.config['OPENID_PROVIDERS'])
